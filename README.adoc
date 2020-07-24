@@ -33,28 +33,6 @@ HHC01603I *            TK4- update by Juergen Winkelmann  winkelmann@id.ethz.ch
 HHC01603I *                     see TK4-.CREDITS for complete credits
 ----
 
-----
-netstat -anpt | grep 3270
-tcp        0      0 0.0.0.0:3270            0.0.0.0:*               LISTEN      3223896/conmon
-tcp6       0      0 ::1:50922               ::1:6011                ESTABLISHED 3215344/x3270
-----
-
-----
-podman container ls
-CONTAINER ID  IMAGE                      COMMAND  CREATED         STATUS             PORTS                   NAMES
-e024f06b226c  localhost/hercules:latest           14 seconds ago  Up 13 seconds ago  0.0.0.0:3270->3270/tcp  hercules
-
-sudo podman exec -i  e024f06b226c  ls /marc
-....
-asm.jcl
-....
-----
-
-----
-podman container ls
-CONTAINER ID  IMAGE                      COMMAND  CREATED        STATUS            PORTS  NAMES
-a9765ec781a4  localhost/hercules:latest           3 minutes ago  Up 3 minutes ago         hercules
-----
 
 ----
 herculescontainer=`podman container ls  | tail -1 | grep hercules |  awk '{print $1'}`
