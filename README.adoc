@@ -4,3 +4,12 @@ buildah bud -t hercules:latest .
 podman push localhost/hercules:latest  quay.io/marcf5/hercules
 sudo podman run -dt --name=hercules  -p 3270:3270 localhost/hercules
 ----
+
+----
+x3270
+connect to localhost:3270
+----
+
+----
+login as herc02/cul8tr
+----
