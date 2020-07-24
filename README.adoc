@@ -50,7 +50,7 @@ CONTAINER ID  IMAGE                      COMMAND  CREATED        STATUS         
 a9765ec781a4  localhost/hercules:latest           3 minutes ago  Up 3 minutes ago         hercules
 
 podman exec -i a9765ec781a4 x3270
-podman exec -i 39dfb835ded2 '/bin/sh' -c 'x3270 localhost:3270'
+podman exec -i 39dfb835ded2 '/bin/sh' -c 'x3270 127.0.0.1:3270'
 ----
 
 ----
