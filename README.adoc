@@ -54,7 +54,7 @@ podman exec -i a9765ec781a4 x3270
 
 ----
 x3270
-connect to localhost:3270
+connect to 127.0.0.1:3270
 ----
 
 ----
