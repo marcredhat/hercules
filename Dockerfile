@@ -1,7 +1,7 @@
 FROM registry.fedoraproject.org/fedora-minimal
 
 RUN   microdnf update && \
-      microdnf -y install automake flex m4 gcc-c++ x3270-x11  libnsl unzip wget binutils && \
+      microdnf -y install automake flex m4 gcc-c++ x3270-x11  xauth xorg-x11-apps libnsl unzip wget binutils && \
       cd /opt && \
       mkdir hercules && \
       cd hercules && \
