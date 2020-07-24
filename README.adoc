@@ -1,8 +1,8 @@
 
 ----
 buildah bud -t hercules:latest .
-podman  login -u="<quay.io user>" -p="<encrypted password from quay.io>" quay.io
-sudo podman push localhost/hercules:latest  quay.io/marcf5/hercules
+#podman  login -u="<quay.io user>" -p="<encrypted password from quay.io>" quay.io
+#sudo podman push localhost/hercules:latest  quay.io/marcf5/hercules
 sudo podman run -dt --name=hercules  -p 3270:3270 localhost/hercules
 ----
 
