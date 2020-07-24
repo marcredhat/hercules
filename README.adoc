@@ -1,5 +1,6 @@
 
-
+----
 buildah bud -t hercules:latest .
 podman push localhost/hercules:latest  quay.io/marcf5/hercules
 podman run --name=hercules -it localhost/hercules:latest &
+----
