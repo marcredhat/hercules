@@ -1,4 +1,7 @@
 
+----
+podman container ls
+----
 
 ----
 git clone https://github.com/marcredhat/hercules.git
