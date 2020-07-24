@@ -55,7 +55,7 @@ a9765ec781a4  localhost/hercules:latest           3 minutes ago  Up 3 minutes ag
 
 ----
 herculescontainer=`podman container ls  | tail -1 | grep hercules |  awk '{print $1'}`
-podman exec -i herculescontainer '/bin/sh' -c 'x3270 127.0.0.1:3270'
+podman exec -i $herculescontainer '/bin/sh' -c 'x3270 127.0.0.1:3270'
 ----
 
 ----
