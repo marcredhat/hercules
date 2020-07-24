@@ -1,6 +1,9 @@
 
+== Emulated mainframe in a container with podman
+
 ----
-podman container ls
+Remove any existing hercules containers
+podman container ls | grep hercules |  awk '{print $1'} | xargs podman rm --force
 ----
 
 ----
