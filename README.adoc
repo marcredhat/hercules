@@ -7,7 +7,7 @@ cd hercules; chmod +x ./hercules.sh
 ----
 
 ----
-podman logs -l
+podman logs -l --follow
 HHC01603I *
 HHC01603I *                           ************   ****  *****          ||
 HHC01603I *                           **   **   **    **    **           |||
