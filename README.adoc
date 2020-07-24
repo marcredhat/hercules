@@ -7,6 +7,12 @@ cd hercules; chmod +x ./hercules.sh
 ----
 
 ----
+netstat -anpt | grep 3270
+tcp        0      0 0.0.0.0:3270            0.0.0.0:*               LISTEN      3223896/conmon
+tcp6       0      0 ::1:50922               ::1:6011                ESTABLISHED 3215344/x3270
+----
+
+----
 buildah bud -t hercules:latest .
 #podman  login -u="<quay.io user>" -p="<encrypted password from quay.io>" quay.io
 #sudo podman push localhost/hercules:latest  quay.io/marcf5/hercules
