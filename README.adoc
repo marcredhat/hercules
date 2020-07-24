@@ -51,17 +51,14 @@ asm.jcl
 podman container ls
 CONTAINER ID  IMAGE                      COMMAND  CREATED        STATUS            PORTS  NAMES
 a9765ec781a4  localhost/hercules:latest           3 minutes ago  Up 3 minutes ago         hercules
-
-podman exec -i a9765ec781a4 x3270
-podman exec -i 39dfb835ded2 '/bin/sh' -c 'x3270 127.0.0.1:3270'
 ----
 
 ----
-x3270
-connect to 127.0.0.1:3270
+herculescontainer=`podman container ls  | tail -1 | grep hercules |  awk '{print $1'}`
+podman exec -i herculescontainer '/bin/sh' -c 'x3270 127.0.0.1:3270'
 ----
 
 ----
 login as herc02/cul8tr
 ----
---
+
