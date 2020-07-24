@@ -1,2 +1,2 @@
 buildah bud -t hercules:latest .
-sudo podman run -dt --name=hercules  -p 3270:3270 localhost/hercules
+sudo podman run -v .:/marc:Z  -dt --name=hercules  -p 3270:3270 localhost/hercules
