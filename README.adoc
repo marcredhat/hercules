@@ -7,6 +7,27 @@ cd hercules; chmod +x ./hercules.sh
 ----
 
 ----
+podman logs -l
+HHC01603I *
+HHC01603I *                           ************   ****  *****          ||
+HHC01603I *                           **   **   **    **    **           |||
+HHC01603I *                           **   **   **    **   **           ||||
+HHC01603I *                                **         **  **           || ||
+HHC01603I *        |l      _,,,---,,_      **         ** **           ||  ||
+HHC01603I * ZZZzz /,'.-'`'    -.  ;-;;,    **         ****           ||   ||
+HHC01603I *      |,4-  ) )-,_. ,( (  ''-'  **         *****         ||    ||
+HHC01603I *     '---''(_/--'  `-')_)       **         **  **       ||     ||    ||||||||||
+HHC01603I *                                **         **   **      |||||||||||
+HHC01603I *       The MVS 3.8j             **         **    **            ||
+HHC01603I *     Tur(n)key System           **         **     **           ||
+HHC01603I *                              ******      ****     ***       ||||||
+HHC01603I *
+HHC01603I *            TK3 created by Volker Bandke       vbandke@bsp-gmbh.com
+HHC01603I *            TK4- update by Juergen Winkelmann  winkelmann@id.ethz.ch
+HHC01603I *                     see TK4-.CREDITS for complete credits
+----
+
+----
 netstat -anpt | grep 3270
 tcp        0      0 0.0.0.0:3270            0.0.0.0:*               LISTEN      3223896/conmon
 tcp6       0      0 ::1:50922               ::1:6011                ESTABLISHED 3215344/x3270
