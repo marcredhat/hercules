@@ -34,11 +34,16 @@ tcp6       0      0 ::1:50922               ::1:6011                ESTABLISHED 
 ----
 
 ----
-buildah bud -t hercules:latest .
-#podman  login -u="<quay.io user>" -p="<encrypted password from quay.io>" quay.io
-#sudo podman push localhost/hercules:latest  quay.io/marcf5/hercules
-sudo podman run -dt --name=hercules  -p 3270:3270 localhost/hercules
+podman container ls
+CONTAINER ID  IMAGE                      COMMAND  CREATED         STATUS             PORTS                   NAMES
+e024f06b226c  localhost/hercules:latest           14 seconds ago  Up 13 seconds ago  0.0.0.0:3270->3270/tcp  hercules
+
+sudo podman exec -i  e024f06b226c  ls /marc
+....
+asm.jcl
+....
 ----
+
 
 ----
 x3270
@@ -48,3 +53,4 @@ connect to localhost:3270
 ----
 login as herc02/cul8tr
 ----
+--
