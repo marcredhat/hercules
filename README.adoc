@@ -15,6 +15,14 @@ I have good news: you can
 ----
 
 ----
+This runs the TK4- distribution of MVS 3.8J inside a container using podman.
+----
+
+
+NOTE: All credit belongs to Juergen Winkelmann for creating TK4-, Volker Bande for creating TK3, the Hercules team for creating Hercules, IBM for creating MVS, etc. 
+
+
+----
 Remove any existing hercules containers
 podman container ls | grep hercules |  awk '{print $1'} | xargs podman rm --force
 ----
