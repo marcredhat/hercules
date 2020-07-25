@@ -4,7 +4,9 @@
 == Run COBOL, Assembler etc on an emulated mainframe (running in a container) and
 == Check the results with `podman logs  -l`
 
-https://youtu.be/YIcmDibCmSg
+
+Video 1: https://youtu.be/YIcmDibCmSg
+
 
 ----
 For those who want test the latest Ansible/Z, Cloud Broker, zcEE, z/OSMF etc
@@ -81,6 +83,7 @@ The container mounts all files from your current folder on your laptop to
 So you can upload your JCL, COBOL, Assembler etc files from /marc as shown in the following video:
 ----
 
-https://youtu.be/CdbKyfAtjRc
+
+Video 2: https://youtu.be/CdbKyfAtjRc
 
 
