@@ -1,5 +1,8 @@
 
-== Emulated mainframe in a container with podman
+== Emulated mainframe in a container with podman.
+
+== Run COBOL, Assembler etc on an emulated mainframe (running in a container) and 
+using podman check the results with podman logs  -l
 
 ----
 For those who want test the latest Ansible/Z, Cloud Broker, zcEE, z/OSMF etc with various OpenShift 4 releases
