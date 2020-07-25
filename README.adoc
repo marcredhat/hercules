@@ -4,6 +4,8 @@
 == Run COBOL, Assembler etc on an emulated mainframe (running in a container) and
 == Check the results with `podman logs  -l`
 
+https://youtu.be/YIcmDibCmSg
+
 ----
 For those who want test the latest Ansible/Z, Cloud Broker, zcEE, z/OSMF etc with various OpenShift 4 releases
 and have access to ZD&T, please see https://github.com/marcredhat/z/blob/master/zdt.adoc
