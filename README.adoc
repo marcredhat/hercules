@@ -2,6 +2,19 @@
 == Emulated mainframe in a container with podman
 
 ----
+For those who want test the latest Ansible/Z, Cloud Broker, zcEE, z/OSMF etc with various OpenShift 4 releases
+and have access to ZD&T, please see https://github.com/marcredhat/z/blob/master/zdt.adoc
+----
+
+----
+For those who do not have access to ZD&T but want to learn/practice JCL, COBOL, Assembler on an emulated mainframe,
+I have good news: you can
+1) run the emulated mainframe in a container using podman 
+2) upload files from your laptop to the mainframe if you are not comfortable with the mainframe text editors 
+3) start the 3270 console directly from the container
+----
+
+----
 Remove any existing hercules containers
 podman container ls | grep hercules |  awk '{print $1'} | xargs podman rm --force
 ----
